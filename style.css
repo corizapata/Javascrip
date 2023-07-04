@@ -1,0 +1,32 @@
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+button{
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: 5px solid black;
+    border-radius: 20px;
+    transition: all 500ms;
+}
+
+button.hover{
+    background-color: yellow;
+    color: white;
+    transform: rotate(-360deg);
+    box-shadow: 10px 10px 20px green;
+}
+
+.loop{
+    animation: loop 2s infinite;
+}
+
+@keyframes loop {
+    100%{
+        transform: rotate(-360deg);
+    }
+}
